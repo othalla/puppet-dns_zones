@@ -44,5 +44,11 @@
 #
 class dns_zones {
 
-
+  vcsrepo { '/var/named/':
+    ensure   => present,
+    provider => git,
+    remote   => 'origin',
+    revision => 'master',
+    source   => 'https://github.com/othalla/dns.git',
+  }
 }
