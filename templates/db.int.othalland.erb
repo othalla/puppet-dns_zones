@@ -1,0 +1,22 @@
+$TTL      604800
+@         IN      SOA      ns.int.othalland.xyz. root.int.othalland.xyz. (
+                           3        ; Serial
+                      604800        ; Refresh
+                       86400        ; Retry
+                     2419200        ; Expire
+                      604800 )      ; Negative Cache TTL
+
+;Nameservers
+     IN       NS    ns.int.othalland.xyz.
+
+;IP of the nameservers
+<%= @facts[ipaddress] %>.int.othalland.xyz.     IN  A      ns
+
+r001.int.othalland.xyz.         IN  A      192.168.1.110
+r002.int.othalland.xyz.         IN  A      192.168.1.111
+rctn001.int.othalland.xyz.      IN  A      192.168.1.120
+rctn002.int.othalland.xyz.      IN  A      192.168.1.121
+rctn003.int.othalland.xyz.      IN  A      192.168.1.121
+rctn004.int.othalland.xyz.      IN  A      192.168.1.121
+rctn005.int.othalland.xyz.      IN  A      192.168.1.121
+othanas.int.othalland.xyz.      IN  A      192.168.1.191

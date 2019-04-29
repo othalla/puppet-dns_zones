@@ -7,12 +7,7 @@
   "source": "https://github.com/othalla/puppet-dns_zones.git",
   "project_page": "https://github.com/othalla/puppet-dns_zones",
   "issues_url": "https://github.com/othalla/puppet-dns_zones/issues",
-  "dependencies": [
-    {
-      "name":"puppetlabs-stdlib",
-      "version_requirement":">= 1.0.0"
-    }
-  ],
+  "dependencies": [],
   "data_provider": null
 }
 
