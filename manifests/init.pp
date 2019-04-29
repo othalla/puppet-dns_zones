@@ -3,7 +3,7 @@ class dns_zones (
 ) {
 
   file { $dns_zones_directory:
-    ensure => present,
+    ensure => directory,
     mode   => '0755',
   }
   -> file { "${dns_zones_directory}/db.int.othalland.xyz":
